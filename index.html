@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website - Shayan Shah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span
+          >
+          <li><a href="#">Home</a></li>
+          <li><a href="#prod">Products</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Start Your Day With<span>Fresh Coffee</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          ipsa fugit esse maxime veritatis, illum, mollitia dolore impedit odi
+          impetr shey
+        </p>
+        <button>Order Now</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuBtn = document.querySelector("#menu-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        menuBtn.click();
+      });
+    </script>
+  </body>
+</html>
